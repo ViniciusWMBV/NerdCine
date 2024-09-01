@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="./img/config/logo.png">
+    <title>NerdCine</title>
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+       <a href="./index.html"><img src="./img/config/logo.png"></a>
+      <a href="./pesquisar.html"><img class="pesquisar" src="./img/config/lupa.png"> </a> 
+    </header>
+    <div class="mobile">
+
+    <!--Conteudo Principal-->
+    <main><a href="./filmes/duna.html">
+        <!--Card do trailer-->
+        <div class="card">
+           <img src="./img/imgfilmes/titulocard.png"> 
+           <button>Assista agora</button>
+        <video autoplay muted loop>
+            <source src="./trailer/trailer.mp4" type="video/mp4">
+          </video></a>
+          </div>
+
+          <div class="filmes">
+            <img class="emalta" src="./img/fontes/emalta.png">
+            <div class="carousel">
+              <div class="carousel-item" data-movie-id="atravesdaminhajanela2" >
+                <img src="https://br.web.img2.acsta.net/c_310_420/pictures/21/10/28/18/22/5946618.jpg"  alt="atravesdaminhajanela2" onclick="redirectPage('./filmes/atravesdaminhajanela2.html')">
+              </div>
+              <div class="carousel-item" data-movie-id="johnwick4" >
+                <img src="https://br.web.img2.acsta.net/c_310_420/pictures/22/12/05/09/07/2007563.jpg" alt="johnwick4">
+              </div>
+              <div class="carousel-item">
+                <img src="https://br.web.img3.acsta.net/c_310_420/pictures/23/04/03/19/45/2854005.jpg" data-movie-id="mariofilm" alt="mario">
+              </div>
+              <div class="carousel-item">
+                <img src="https://br.web.img2.acsta.net/c_310_420/pictures/22/05/09/16/16/3197518.jpg " alt="Filme 3">
+              </div>
+            </div>
+            <div class="carousel-arrow left">&#8249;</div>
+            <div class="carousel-arrow right">&#8250;</div>
+          </div>
+          
+    </main>
+
+</div>
+
+<!--Versão desktop-->
+<div class="desktop">
+    <h1> Versão Desktop em manutenção</h1>
+</div>
+
+<script src="./JS/script.js"></script>
+</body>
+</html>

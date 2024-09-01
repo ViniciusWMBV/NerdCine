@@ -1,0 +1,186 @@
+/*Reset CSS*/
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
+    /*Corpo da pagina*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color: rgb(18, 18, 18);
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+    /* cabeçalho */ 
+header{ 
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+}
+
+/*Logo cabeçalho*/
+header img{
+    margin-top: 13px;
+    height: 50%;
+}
+
+.pesquisar{
+    margin-left: 20%;
+    position: absolute;
+    width: 8%;
+    height: auto;
+}
+
+/*Conteudo Principal da pagina*/
+/*main{
+
+}*/
+
+/*Video trailer*/
+.card video{
+    object-fit: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    opacity: 0.4;
+    
+}
+
+/*Logo do trailer*/
+.card img{
+    position: absolute;
+    width: 50%;
+    margin-top: 25%;
+    margin-left: 45%;
+}
+
+/*Botão do trailer*/
+.card button{
+    position: absolute;
+    border-radius: 10px ;
+    height: 20px;
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 35%;
+    background-color: red;
+    color: white;
+}
+
+
+/* Versão Mobile */
+@media (min-width: 600px) {
+    .mobile{
+        visibility:hidden
+    }
+    .desktop{
+        visibility: visible;
+    }
+    .pesquisar{
+        visibility: hidden;
+    }
+  }
+
+
+  /* Versão Desktop */
+  @media (max-width: 600px) {
+    .mobile{
+        visibility:visible
+    }
+    .desktop{
+        visibility: hidden;
+    }
+    .pesquisar{
+        visibility: visible;
+    }
+  }
+
+
+  
+  .filmes {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .emalta{
+    width:15%;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .carousel-item {
+    width: 180px;
+    scroll-snap-align: start;
+  }
+  
+  .carousel-item img {
+    height: 180px;
+    border-radius: 4px;
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .carousel-arrow.left {
+    left: 10px;
+    display: none;
+  }
+  
+  .carousel-arrow.right {
+    right: 10px;
+display: none;}
+
+.logopesquisar{
+    margin-top: 25%;
+    width: 50%;
+}
+
+main input{
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 80%;
+    height: 30px;
+}
+
+main button{
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+
+}
